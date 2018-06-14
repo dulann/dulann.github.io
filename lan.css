@@ -32,6 +32,15 @@ h2 {
     margin:0px;
 }
 
+h2 {
+    color: #9A1212;
+    font-size:15px;
+    font-weight: normal;
+    padding: 5px 10px;
+    margin:0px;
+}
+
+
 /*img.download {vertical-align:middle;}*/
 
 /* ----------container to center the layout-------------- */
