@@ -70,24 +70,51 @@ a:focus-visible {
   width: 100%;
   min-height: 132px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 34px 36px;
   text-align: center;
   background:
-    linear-gradient(135deg, rgba(15, 27, 51, 0.96), rgba(20, 48, 78, 0.92)),
-    var(--heading);
+    radial-gradient(circle at 22% 10%, rgba(141, 61, 235, 0.14), transparent 18rem),
+    radial-gradient(circle at 78% 8%, rgba(0, 198, 220, 0.16), transparent 16rem),
+    linear-gradient(135deg, #ffffff 0%, #f4fbff 50%, #eef8fb 100%);
   border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+#banner::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: min(420px, 72%);
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(90deg, #8d3deb, var(--cyan));
 }
 
 #bannertitle {
+  position: relative;
+  z-index: 1;
   max-width: 920px;
-  color: #ffffff;
+  color: var(--heading);
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
   line-height: 1.12;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  text-shadow: none;
+}
+
+.banner-vision {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.75rem;
+  color: #237287;
+  font: 700 clamp(0.95rem, 2vw, 1.25rem)/1.35 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
 }
 
 #outer,
