@@ -321,6 +321,25 @@ strong {
   color: var(--text) !important;
 }
 
+.paper-link,
+.paper-link:visited {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid rgba(0, 167, 200, 0.34);
+  border-radius: 4px;
+  background: #f3fbfd;
+  color: var(--accent);
+  font: 700 0.78rem/1.35 Arial, Helvetica, sans-serif;
+}
+
+.paper-link:hover,
+.paper-link:focus {
+  border-color: rgba(155, 27, 48, 0.38);
+  background: #fff7f8;
+  text-decoration: none;
+}
+
 #footer {
   clear: both;
   min-height: 48px;
